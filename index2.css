@@ -1,0 +1,72 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #333;
+}
+.btns {
+	font-family: 'Nunito', sans-serif;
+	width: 120px;
+	position: absolute;
+	top: 50px;
+	padding: 10px 30px;
+	background: none;
+	color: white;
+	font-weight: bold;
+	border: 3px bold white;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transform: translateX(-50%);
+}
+.btn-zoom {
+	left: 40%;
+}
+.btn-move {
+	left: 50%;
+}
+.btn-color {
+	left: 60%;
+}
+.square {
+	position: absolute;
+	top: 150px;
+	width: 100px;
+	height: 100px;
+	border-radius: 25px;
+	transform: translateX(-50%);
+	transition: 0.3s;
+}
+.blue {
+	background-color: royalblue;
+	box-shadow: 0 0 15px rgb(50, 82, 177);
+	border: 2px solid rgb(50, 82, 177);
+	left: 40%;
+}
+.red {
+	background-color: crimson;
+	box-shadow: 0 0 15px rgb(170, 15, 46);
+	border: 2px solid rgb(170, 15, 46);
+	left: 50%;
+}
+.gold {
+	background-color: gold;
+	box-shadow: 0 0 15px rgb(192, 163, 0);
+	border: 2px solid rgb(192, 163, 0);
+	left: 60%;
+}
+.btn-zoom:hover ~ .square {
+	width: 150px;
+	height: 150px;
+}
+.btn-move:hover ~ .square {
+	top: 400px;
+}
+.btn-color:hover ~ .square {
+	background-color: black;
+	border: 2px solid white;
+	box-shadow: 0 0 15px black;
+}
